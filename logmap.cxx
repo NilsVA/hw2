@@ -16,12 +16,12 @@ int main(){
 	   x=x0;
 	   for(int i=1; i <= Nskip; i++)
 		   x = r*x*(1-x);
-	   for(int i=1; i <= Nend-Nskip; i++){
+	   for(int i=0; i < Nend-Nskip; i++){
 	   		   x = r*x*(1-x);
 	   		   //cout << r << "\t" << x << endl;
                            d[i]=x;
                         }
-           for(int j=1; j<= Nend-Nskip;j++){
+           for(int j=0; j< Nend-Nskip;j++){
    	               
 			out << r << "\t" << d[j] << endl;
 			
